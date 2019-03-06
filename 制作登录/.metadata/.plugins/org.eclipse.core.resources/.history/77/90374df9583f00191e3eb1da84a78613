@@ -1,0 +1,43 @@
+package ClientLogin;
+
+import javax.swing.*;
+import java.awt.*;
+import javax.swing.*;
+
+public class FriendList extends JFrame{
+    //成员变量
+	JLabel myFriendListJLabel;
+	JPanel myFriendListJPanel;
+	JButton myFriendButton;
+	JScrollPane myFriendJScrollpane;//滚动列表
+	JPanel myFiendPanl;
+	JButton StrangerButton;
+	JButton BlackListButton;
+	
+	public static final int MYFRIENDCOUNT=51;
+	JLabel[] myFriendJLabel=new JLabel[MYFRIENDCOUNT];//对象数组
+	public FriendList(){
+		
+		myFriendListJPanel=new JPanel(new BorderLayout());
+		//System.out.println(myFriendPanel.getLayout());
+		myFriendButton=new JButton("我的好友");
+		myFriendListJPanel.add(myFriendButton,"North");
+		myFiendPanl=new J
+		myFriendListJPanel=new JPanel();
+		for(int i=1;i<MYFRIENDCOUNT;i++){
+			myFriendJLabel[i]=new JLabel(i+"",new ImageIcon("images/yy2.gif"),JLabel.LEFT);
+			myFriendListJPanel.add(myFriendJLabel[i]);
+		  }
+		myFriendJScrollpane=new JScrollPane(myFriendListJPanel);
+		myFriendPanel.add(myFriendJScrollpane);
+		this.add(myFriendPanel);
+		this.setSize(200, 500);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+		this.setVisible(true);
+	}
+	public static void main(String[] args) {
+		FriendList friendList=new FriendList();
+	}
+
+}

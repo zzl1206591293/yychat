@@ -1,0 +1,31 @@
+package ClientLogin;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class FriendList extends JFrame{
+    
+	JLabel myFriendJLabel;
+	JPanel myFriendPanel;
+	JButton myFriendButton;
+	JScrollPane myFriendJScrollpane;//滚动列表
+	//public static final int MY
+	//JLabel[] myJLabel;
+	public FriendList(){
+		myFriendPanel=new JPanel(new BorderLayout());
+		//System.out.println(myFriendPanel.getLayout());
+		myFriendButton=new JButton("我的好友");
+		myFriendPanel.add(myFriendButton,"North");
+		
+		
+		this.add(myFriendPanel);
+		this.setSize(150, 500);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+		this.setVisible(true);
+	}
+	public static void main(String[] args) {
+		FriendList friendList=new FriendList();
+	}
+
+}

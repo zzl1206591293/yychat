@@ -1,0 +1,39 @@
+package ClientLogin;
+
+import javax.swing.*;
+
+public class ClientLogin extends JFrame {//类名，继承
+    JLabel jbl1;
+	
+    JTabbedPane jtp1;
+    
+    
+	JButton jb1,jb2,jb3;
+	JPanel jpl1;
+    public ClientLogin(){//构造方法
+		jbl1=new JLabel(new ImageIcon("images/tou.gif"));
+		this.add(jbl1,"North");
+		
+		
+		
+		
+		jb1=new JButton(new ImageIcon("images/denglu.gif"));
+		jb2=new JButton(new ImageIcon("images/zhuce.gif"));
+		jb3=new JButton(new ImageIcon("images/quxiao.gif"));
+		jpl1=new JPanel();
+		jpl1.add(jb1);jpl1.add(jb2);jpl1.add(jb3);
+		this.add(jpl1,"South");
+		
+		
+		this.setSize(350, 240);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(true);
+	}
+	
+	
+	public static void main(String[] args) {
+		ClientLogin clientLogin=new ClientLogin();
+
+	}
+
+}
