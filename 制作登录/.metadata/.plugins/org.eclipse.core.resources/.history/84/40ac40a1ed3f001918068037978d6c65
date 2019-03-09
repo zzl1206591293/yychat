@@ -86,7 +86,7 @@ public class FriendList extends JFrame implements ActionListener{//接口
 		this.add(myFriendPanel,"1");
 		this.add(StrangerBlackJPanel,"2");
 		
-		
+		this.add(StrangerBlackJPanel);
 		this.setSize(200, 500);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLocationRelativeTo(null);
@@ -98,8 +98,8 @@ public class FriendList extends JFrame implements ActionListener{//接口
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		
-		if(arg0.getSource()==myStrangerButton) cardLayout.show(this.getContentPane(),"2");
-		if(arg0.getSource()==myFriendJButton1) cardLayout.show(this.getContentPane(),"1");
+		if(arg0.getSource()==myStrangerButton cardLayout.show(this.getContentPanel(),"2"));
+		
 	}
 
 }

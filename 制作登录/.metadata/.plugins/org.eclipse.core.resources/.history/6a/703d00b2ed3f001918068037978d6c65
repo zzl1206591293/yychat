@@ -86,7 +86,7 @@ public class FriendList extends JFrame implements ActionListener{//½Ó¿Ú
 		this.add(myFriendPanel,"1");
 		this.add(StrangerBlackJPanel,"2");
 		
-		
+		this.add(StrangerBlackJPanel);
 		this.setSize(200, 500);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLocationRelativeTo(null);
