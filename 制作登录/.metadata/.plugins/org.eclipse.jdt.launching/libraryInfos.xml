@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+<libraryInfo home="D:\yy.chat" version="1.8.0_60">
+<bootpath>
+<entry path="D:\yy.chat\lib\resources.jar"/>
+<entry path="D:\yy.chat\lib\rt.jar"/>
+<entry path="D:\yy.chat\lib\sunrsasign.jar"/>
+<entry path="D:\yy.chat\lib\jsse.jar"/>
+<entry path="D:\yy.chat\lib\jce.jar"/>
+<entry path="D:\yy.chat\lib\charsets.jar"/>
+<entry path="D:\yy.chat\lib\jfr.jar"/>
+<entry path="D:\yy.chat\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\yy.chat\lib\ext"/>
+<entry path="C:\windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\yy.chat\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="C:\Program Files\Java\jre1.8.0_40" version="1.8.0_40">
 <bootpath>
 <entry path="C:\Program Files\Java\jre1.8.0_40\lib\resources.jar"/>
